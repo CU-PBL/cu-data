@@ -19,8 +19,8 @@ class Program
     [DataContract]
     class Product
     {
-        [DataMember] private string name, category, sub_category;
-        [DataMember] private int id, price;
+        [DataMember] public string name, category, sub_category;
+        [DataMember] public int id, price;
 
    
     }
