@@ -22,39 +22,6 @@ class Program
         [DataMember] private string name, category, sub_category;
         [DataMember] private int id, price;
 
-        public override string ToString()
-        {
-            return $"{name} {category} {sub_category}";
-        }
-
-        public string Name
-        {
-            get => name;
-            set => name = value;
-        }
-
-        public string Category
-        {
-            get => category;
-            set => category = value;
-        }
-
-        public string Sub_category
-        {
-            get => sub_category;
-            set => sub_category = value;
-        }
-
-        public int Id
-        {
-            get => id;
-            set => id = value;
-        }
-
-        public int Price
-        {
-            get => price;
-            set => price = value;
-        }
+   
     }
 }
