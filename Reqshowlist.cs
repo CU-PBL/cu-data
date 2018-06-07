@@ -13,10 +13,10 @@ class Program
         var request = new RestRequest(Method.GET);
         var response = client.Execute(request);
 
-        var productList = Cson<Product>.ArrParse(response.Content);
+        var productList = Cson<ProductData>.ArrParse(response.Content);
     }
 
-    class Product
+    class ProductData
     {
         public string name, category, sub_category;
         public int id, price;
