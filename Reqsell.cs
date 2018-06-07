@@ -19,12 +19,3 @@ static void CallAddSell()
 
     Console.WriteLine(response.Content);
 }
-
-[DataContract]
-class SellData
-{
-    [DataMember] public string paymentOption;
-    [DataMember] public int cardNumber;
-    [DataMember] public string cashRecipt;
-    [DataMember] public int sum;
-}
