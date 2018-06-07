@@ -16,11 +16,10 @@ class Program
         var productList = Cson<Product>.ArrParse(response.Content);
     }
 
-    [DataContract]
     class Product
     {
-        [DataMember] public string name, category, sub_category;
-        [DataMember] public int id, price;
+        public string name, category, sub_category;
+        public int id, price;
 
    
     }
