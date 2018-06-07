@@ -5,7 +5,7 @@ static void CallStock()
     stockes.Add(new Stock() {id = 3, stock = 1});
     stockes.Add(new Stock() {id = 5, stock = 1});
 
-    var result = Cson<List<Stock>>.Parse(stockes);
+    var result = Cson<List<StockData>>.Parse(stockes);
     var client = new RestClient("http://localhost:8000/stock?flag" + "add"/* sell */);
     var request = new RestRequest(Method.POST);
     request.AddHeader("content-type", "application/json");
