@@ -1,4 +1,4 @@
-class Stock
+class StockData
 {
     public int id, stock;
 }
