@@ -14,9 +14,3 @@ static void CallStock()
 
     Console.WriteLine(response.Content);
 }
-
-[DataContract]
-class Stock
-{
-    [DataMember] public int id, stock;
-}
