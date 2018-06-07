@@ -5,6 +5,6 @@ static void CallProductDetail()
     var request = new RestRequest(Method.GET);
     var response = client.Execute(request);
 
-    var result = Cson<Product>.DeParse(response.Content);
+    var result = Cson<ProductData>.DeParse(response.Content);
     Console.WriteLine($"{result.id}, {result.price}, {result.name}");
 }
