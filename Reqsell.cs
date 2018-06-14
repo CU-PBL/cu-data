@@ -3,8 +3,8 @@ static void CallAddSell()
 {
     var data = new SellData
     {
-        paymentOption = "bill",
-        cardNumber = 1635,
+        paymentOption = "card", // cash
+        cardNumber = 1635, 
         cashRecipt = "010-1234-5678",
         sum = 19000
     };
