@@ -1,6 +1,6 @@
 static void CallRefund()
 {
-    var refundData = new RefundData {hash = "해시값"};
+    var refundData = new RefundData {hash = "해시값"}; // SaleDetailData class의 hash 변수를 넣는다.
 
     var result = Cson<RefundData>.Parse(refundData);
     var client = new RestClient("http://localhost:8000/refund");
